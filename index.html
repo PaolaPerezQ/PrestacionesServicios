@@ -15,36 +15,49 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Programación</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item" id="Block">
-              <a class="nav-link" href="html/Block.html">Block</a>
-            </li>
-            <li class="nav-item dropdown">
-            </li>
-            <li class="nav-item" id="contacto">
-              <a class="nav-link" href="html/imagenes.html">Imagenes</a>
-            </li>
-            <li class="nav-item" id="Dudas">
-              <a class="nav-link" href="html/dudas.html">Foro</a>
-            </li>
-            <li class="nav-item" id="Otro">
-              <a class="nav-link" href="html/ideas.html">Otro</a>
-            </li>
-          </ul>
 
+  <header>
+    <nav class="navbar">
+      <div class="logo-header">
+        <a href="index.html">
+          <img src="img/LOGO 1.png" alt="" width="50px" height="50px" >
+        </a>
+      </div>
+      <button
+        onclick="toggleMenu()" class="burger">
+      </button>
+      <button class="burger">Home</button>
+      <div class="dropdowns">
+        <div class="dropdown">
+          <button class="button">
+            Categorias
+            <img src="SVG/chevron.svg">
+          </button>
+          <div class="dropdown-menu">
+            <button>Elcetrodomesticos</button>
+            <button>Automotriz</button>
+            <button>Electronicos</button>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="button">
+            Login
+            <img src="SVG/chevron.svg">
+          </button>
+          <div class="dropdown-menu">
+            <button>Registrarse</button>
+            <button>Iniciar sesion</button>
+          </div>
         </div>
       </div>
     </nav>
+    <script>
+      const toggleMenu = () =>
+        document.body.classList.toggle("open");
+    </script>
   </header>
+
+
 
   <div class="container">
     <main>
@@ -52,22 +65,26 @@
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/A.png" class="d-block w-50" alt="...">
+            <img src="img/img_carrusel_1.png" class="d-block w-50" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="img/B.jpg" class="d-block w-50" alt="...">
+            <img src="img/img_carrusel_2.png" class="d-block w-50" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="img/C.jpeg" class="d-block w-50" alt="...">
+            <img src="img/img_carrusel_3.png" class="d-block w-50" alt="...">
           </div>
         </div>
       </div>
 
-      <h5>¿POR QUÉ APRENDER A PROGRAMAR?</h5>
+      <h5>¿Quienes somos?</h5>
       <p>
-        Más allá de la informática, la programación se ha convertido en una disciplina transversal que tiene cabida en
-        profesiones tan dispares como el marketing, las finanzas o la salud. Programar no es solo crear webs o
-        aplicaciones, también facilita la automatización de procesos y manejo de grandes volúmenes de datos.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet rerum cum neque. Recusandae suscipit consequatur ea pariatur sunt deleniti iste perferendis, libero eligendi, doloremque est accusamus tempore, alias ipsam voluptatum.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cumque ad nisi adipisci porro minima sequi expedita, eius facilis sint qui vitae quasi, debitis fuga quae unde similique quam dicta.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cumque ad nisi adipisci porro minima sequi expedita, eius facilis sint qui vitae quasi, debitis fuga quae unde similique quam dicta.
       </p>
 
     </main>
@@ -82,7 +99,7 @@
       <div class="box">
         <figure>
           <a href="#">
-            <img src="img/refresh.png" alt="Logo Prestacionde Servicios spa" width="150px" height="150px">
+            <img src="img/LOGO 1.png" alt="Logo Prestacionde Servicios spa" width="100px" height="100px">
           </a>
         </figure>
       </div>
@@ -98,8 +115,10 @@
         </div>
       </div>
       <div class="box">
-        <h2>SOBRE NOSOTROS</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eveniet nisi voluptatem commodi, excepturi, quisquam esse, velit earum quia culpa nobis repellendus dolores corporis hic error id nostrum. Sequi, delectus?</p>
+        <h2>Información útil</h2>
+        <h6>Politicas de privacidad</h6>
+        <h6>Terminos y condiciones</h6>
+        <h6>País/Región</h6>
       </div>
     </div>
     <div class="grupo-2">
