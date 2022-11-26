@@ -53,8 +53,6 @@ button {
 
 body.open .burger {
     background-image: url("../SVG/icon_close.svg");
-    width: 20px;
-    height: 20px;
 }
 
 @media (width >=500px) {
@@ -138,11 +136,6 @@ body.open .burger {
 .dropdown-menu {
     display: grid;
     margin-bottom: 28px;
-    align-items: center;
-}
- 
-a{
-    color: #efefef;
 }
 
 @media (width >=500px) {
